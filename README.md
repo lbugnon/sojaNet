@@ -34,7 +34,7 @@ Para más detalles, los hiperparámetros estan detallados en "soja_net.py". Esto
 diseño inicial, basado en experiencias previas con otros datos temporales, y un ajuste fino en función de los resultados
 obtenidos en particiones de optimización.
 
-![arquitectura](figs/modelo.svg?style=centerme)
+![arquitectura](https://raw.githubusercontent.com/lbugnon/soybean_predict/master/figs/modelo.png?style=centerme)
 
 **Figura 1**: Esquema básico de la arquitectura de aprendizaje profundo utilizada. 
 
@@ -50,7 +50,7 @@ generando diferentes secuencias aleatorias.
 Finalmente, para generar las predicciones se utilizaron todos los datos hasta la fecha de ciere (FC) 27/09/2019, y a 
 partir de esto se generaron diez predicciones entre el 30/09 y el 11/10. 
 
-![mse](https://raw.githubusercontent.com/lbugnon/soybean_predict/master/figs/results.svg)
+![mse](https://raw.githubusercontent.com/lbugnon/soybean_predict/master/figs/results.png)
 
 **Figura 2**: Evolución del MSE en optimización y test para diferentes experimentos.
 
@@ -64,12 +64,12 @@ error, incluso prediciendo la subida repentina del valor en la primera fecha (el
 se puede ver que la varianza es mayor en las fechas donde el precio oscila más, alrededor del 02/10 y del 11/10, mientras
 que se reduce cuando los valores son constantes, aunque el error medio es mas alto. 
  
-![resultados](figs/results.svg?style=centerme)
+![resultados](https://raw.githubusercontent.com/lbugnon/soybean_predict/master/figs/results.png?style=centerme)
 
 **Figura 3:** Comparación de la predicción del modelo propuesto respecto a los valores de cierre observados en el mercado. 
 FC es la fecha hasta la cual se tienen datos a la hora de entrenar los modelos.
 
-![retornos](figs/results_ret.svg?style=centerme)
+![retornos](https://raw.githubusercontent.com/lbugnon/soybean_predict/master/figs/results_ret.png?style=centerme)
 
 **Figura 4:** Predicción del retorno a partir de FC.
 
