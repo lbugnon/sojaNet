@@ -4,5 +4,4 @@ net=SojaNet
 partitions=random
 output_dir=results/
 data_dir=data/
-model_dir=trained_models/
 nbatch=32

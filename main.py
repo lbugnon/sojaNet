@@ -34,11 +34,6 @@ output_dir = config["output_dir"]
 
 shutil.rmtree(output_dir, ignore_errors=True)
 os.mkdir(output_dir)
-
-
-model_dir = config["model_dir"]
-shutil.rmtree(model_dir, ignore_errors=True)
-os.mkdir(model_dir)
 # ======================================================================
 
 logger = Logger(output_dir)
