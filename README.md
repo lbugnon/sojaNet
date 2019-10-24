@@ -50,7 +50,7 @@ generando diferentes secuencias aleatorias.
 Finalmente, para generar las predicciones se utilizaron todos los datos hasta la fecha de ciere (FC) 27/09/2019, y a 
 partir de esto se generaron diez predicciones entre el 30/09 y el 11/10. 
 
-![mse](figs/MSEvsIter.svg?style=centerme)
+![mse](figs/https://github.com/lbugnon/soybean_predict/blob/master/figs/MSEvsIter.svg?style=centerme)
 
 **Figura 2**: Evolución del MSE en optimización y test para diferentes experimentos.
 
