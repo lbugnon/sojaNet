@@ -1,4 +1,4 @@
-## SojaNet: Predicción del precio de la soja utilizando una arquitectura CNN-GRU
+## SojaNet: Predicción del precio de la soja utilizando un modelo CNN-GRU
 
 Este repositorio contiene el código fuente para generar un modelo predictivo del precio de la soja, utilizado  en
  la competencia [Meta-Data Matba-Rofex 2019](https://metadata.fundacionsadosky.org.ar/competition/11/). También se
@@ -82,7 +82,7 @@ en diferentes casos.
 
 El **tercer objetivo** era ajustar los 10 valores antes de FC y los 10 valores 
 siguientes, un total de 20 fechas. Como las fechas antes de FC son los datos provistos, y este modelo se utilzo solo para 
-predecir y no para modelar (algo que en general no tiene sentido con modelos planteados como caja negra), se utilizaron los datos dados para la generación de los  resultados por que no serían válidas 
+predecir y no para modelar (algo que en general no es posible en modelos tipo caja negra), se utilizaron los datos dados para la generación de los  resultados por que no serían válidas 
 para este objetivo. Aún así, esto no invalida los dos objetivos anteriores, dado que no se cuenta con ninguna información
 futura para generar las predicciones a partir de FC.
 
@@ -90,5 +90,4 @@ futura para generar las predicciones a partir de FC.
 El modelo fue entrenado hasta la fecha FC sobre datos realistas y con el objetivo de predicción a fechas futuras, 
 lo que resultó en un ejercicio interesante y pocas veces visto, en el cual ningun participante ni organizador tiene información de la particion de test. Se logró un modelo que, aún a partir de una serie de valores
  simples, **logra el mejor ajuste del error medio para dos semanas posteriores a la fecha de predicción en la competencia 
- (objetivo 1)**.  Sería interesante comparar los modelos que obtuvieron mejores resultados en la fecha final, y evaluar qué información les permite predecir la subida súbita de esa fecha. 
-
+ (objetivo 1)**.  Sería interesante comparar los modelos que obtuvieron mejores resultados en la fecha final, y evaluar qué información les permite predecir la subida súbita de esa fecha. Por otro lado, desde mi desconocimiento en finanzas, veo interesante discutir el uso del MSE en un sistema real en el cual una respuesta promedio "planchada" puede obtener un mejor MSE que una predicción menos conservadora, pero posiblemente obtenga los menores rindes si se utiliza para sugerir una inversión. Tal vez otras medidas de error puedan aportar valor a diferentes estrategias de riesgo de inversión.
